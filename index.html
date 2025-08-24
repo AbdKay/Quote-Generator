@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quote Generator</title>
+
+    <!-- Font Awesome (icons) -->
+    <!-- Using jsDelivr without integrity to avoid SRI mismatches -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1 class="app-title">
+        <i class="fa-solid fa-quote-left"></i> Quote Generator
+      </h1>
+
+      <section class="card" role="region" aria-live="polite">
+        <p id="quote" class="quote">Click “New Quote” to get started.</p>
+        <p id="author" class="author">— Unknown</p>
+
+        <div class="actions">
+          <button
+            id="new-quote"
+            class="btn primary"
+            aria-label="Generate new quote"
+          >
+            <i class="fa-solid fa-shuffle"></i>
+            <span>New Quote</span>
+          </button>
+
+          <button
+            id="copy-quote"
+            class="btn"
+            aria-label="Copy quote to clipboard"
+            title="Copy"
+          >
+            <i class="fa-solid fa-copy"></i>
+          </button>
+
+          <a
+            id="tweet-quote"
+            class="btn"
+            aria-label="Tweet this quote"
+            title="Tweet"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+
+        <div
+          id="toast"
+          class="toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          Copied!
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Built with <i class="fa-solid fa-heart"></i></span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
