@@ -58,7 +58,7 @@ Quote-Generator/
 
 👉 View Demo
 
-(replace with your GitHub Pages or Netlify link)
+https://abdkay.github.io/Quote-Generator/
 
 📜 License
 
